@@ -1,0 +1,11 @@
+### SignUp
+@url_dev=http://localhost:8089/v1/api/
+POST {{url_dev}}/shop/signup/
+Content-Type: application/json
+x-api-key:320d2506d85233ea66b13324e04d953b6599290982fb9425657bb8801d0bf1a0e36b88c7349dd11d953a440a3a0de37f0d2be592b8e44510727eacbba3ba867e
+
+{
+    "name": "Admin",
+    "email": "rapersminhs@gmail.com",
+    "password": "1234abcd"
+}
