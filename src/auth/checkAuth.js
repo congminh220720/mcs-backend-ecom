@@ -41,7 +41,6 @@ const permission = (permission) => {
             })
         }
 
-        console.log('permission::', req.objectKey.permissions)
         const validPermission = req.objectKey.permissions.includes(permission)
         if (!validPermission) {
             return res.status(403).json({
@@ -53,14 +52,7 @@ const permission = (permission) => {
     }
 }
 
-const asyncHandler = fn => {
-    return (req,res,next) => {
-        fn(req,res,next).catch(next)
-    }
-}
-
 module.exports = {
     apiKey,
     permission,
-    asyncHandler
 }
